@@ -1,0 +1,85 @@
+/* Main page layout */
+.home-container {
+  padding: 40px;
+  background-color: #f8f9fa;
+  min-height: 90vh;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2c3e50;
+  font-family: sans-serif;
+}
+
+/* Flexbox layout (Lecture-28) */
+.cycle-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+}
+
+/* Card design (Lecture-32) */
+.cycle-card {
+  width: 280px;
+  background: #ffffff;
+  border-radius: 12px; /* Lecture-23: Border Radius */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08); /* Lecture-25: Box Shadow */
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect (Lecture-25) */
+.cycle-card:hover {
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+}
+
+/* Image placeholder */
+.cycle-placeholder {
+  height: 180px;
+  background-color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* Card text area */
+.cycle-info {
+  padding: 20px;
+  text-align: left; /* Changed from center to left for professional look */
+}
+
+.cycle-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+  color: #1e293b;
+}
+
+.cycle-price {
+  font-size: 18px;
+  color: #059669; /* Green color for price */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Button style (Lecture-25) */
+.btn-book {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb; /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-book:hover {
+  background-color: #1d4ed8;
+}
